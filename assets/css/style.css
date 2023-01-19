@@ -1,0 +1,255 @@
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url(../fonts/Roboto/Roboto-Medium.ttf)
+}
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+
+}
+@font-face {
+    font-family: "Roboto-Light";
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Roboto-medium;
+}
+body {
+    width: 100vw;
+}
+/* ==========HEADER============== */
+
+/* === Bereich oben links === */
+
+
+.ikon_elefant {
+width: 2.5rem;
+position: fixed;
+top: 3vh;
+}
+
+.header_logo_oben_links {
+    display:flex;
+    padding-top: 3vh;
+    margin-left: 5vw; 
+    }
+
+.text_neben_elefant {
+    margin-left: 5vw;
+}
+
+    header h4 {
+        font-size: 1.5rem;
+    font-family: "Roboto-Bold";
+    }
+
+.header_logo_oben_links span {
+font-size: 0.8rem;
+font-family: "Roboto-Light";
+    }
+
+    /* === Bereich obern rechts - Wolke */
+.header_blauewolke {
+    position:relative;
+}
+
+.img_blauewolke {
+    width:40%;
+    position: absolute;
+    right: 0;
+    top:0;
+
+}
+.maninwolke {
+    width: 35%;
+    position:absolute;
+    top:5vh;
+    right: 2vw;
+}
+
+/* ===== Bereich Haupttext im Header */
+
+.header_main_text {
+    font-size: 1.5rem;
+    display:flex;
+    flex-direction: column;
+    max-width: 30vw;
+    position: absolute;
+    top: 40vh;
+    left: 20vw;
+}
+.header_main_text p:nth-of-type(1){
+    font-size: 0.9rem;
+} 
+
+.ikon_rocket {
+    width: 2vw;
+}
+.header_last_line {
+color: red;
+font-size: 1.5rem;
+text-transform: uppercase;
+margin-top: 5rem;
+}
+
+.header_foto_layouts {
+    width:100%;
+    margin-top:100vh;
+    margin-bottom: 20vh;
+}
+
+/* ======== MAIN ========= */
+
+.ikon_birne {
+    width: 3vw;
+}
+
+.main_birne_text {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    padding: 10vh 10vw;
+
+}
+.main_birne_text h2 {
+    font-size:2.5rem;
+    margin-bottom: 4rem;
+    
+}
+.main_birne_text p{
+font-size: 0.9rem;
+font-family:"Roboto-Light";
+line-height: 1.5rem;
+margin-left: 10vw;
+padding-top:2vh;
+}
+.hazwei_birne {
+    grid-column: 1/2;
+}
+.text_birne_rechts {
+grid-column: 2/3;
+grid-row: 1/3;
+}
+.hazwei_unterbirne {
+    grid-column:1/2;
+    grid-row: 2/3;
+}
+main .viertexte {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 10vh;
+  }
+  main .viertexte .textimgrid {
+    margin: auto;
+  }
+  main .viertexte .itemheadline {
+    display: flex;
+    margin-bottom: 2vh;
+  }
+  main .viertexte .ikon_klein {
+    width: 2.5vw;
+    margin-right: 1vw;
+  }
+  main .viertexte .einzeltext {
+    width: 25vw;
+    padding-left: 3.5vw;
+    margin-bottom: 15vh;
+    font-family: "Roboto-Light"} 
+
+    /* ====== Zwischentext ========== */
+    .zwischentext_zwei {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 25vw;
+    }
+    .zwischentext_zwei h2 {
+        font-size: 2.5rem;
+        margin-bottom: 8vh;
+    }
+    .zwischentext_zwei p {
+        font-size: 1.3ram;
+        font-family: "Roboto-Light";
+        margin-bottom: 15vh;
+    }
+
+/* ======== Hauptcollagen ========== */
+
+    .hauptcollage {
+     display:flex;
+    justify-content:space-around;
+    margin: 5vh 5vw 15vh 5vw;
+    padding: 0 5vw;
+    }
+    .hauptcollage img {
+        width: 40vw;
+        
+    }
+    .hauptcollage div {
+        width: 40vw;
+    }
+    .hauptcollage div img {
+        width: 3vw;
+        margin-bottom: 5vh;
+    }
+    .hauptcollage div p:nth-of-type(1) {
+        font-size: 3.5rem;
+        opacity: 0.5;
+        margin: 6vh 0;
+    }
+    .hauptcollage div p:nth-of-type(2) {
+        font-size: 0.9rem;
+        font-family:"Roboto-Light";
+        line-height: 1.5rem;
+        margin-top: 4vh;
+}
+
+/* ======= Footer ========== */
+
+footer {
+    display:flex;
+    flex-direction: column;
+   text-align: center;
+    align-items: center;
+}
+footer h2 {
+    font-size: 2.5rem;
+    margin-bottom: 6vh;
+}
+footer p {
+    font-family: "Roboto-Light";
+    margin-bottom: 6vh;
+}
+.forms {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .email {
+margin-bottom: 3vh;
+padding: 2vh 6vw;
+
+}
+
+footer .submit {
+padding: 2vh 3vw;
+margin-bottom: 4vh;
+background-color: red;
+}
+.letztersatz {
+    display: flex;
+    
+}
+.letztersatz img {
+    width: 2vw;
+    height: 3vh;
+}
