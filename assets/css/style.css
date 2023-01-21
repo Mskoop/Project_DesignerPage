@@ -3,6 +3,10 @@
     src: url(../fonts/Roboto/Roboto-Medium.ttf)
 }
 @font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
     font-family: "Roboto-Bold";
     src: url(../fonts/Roboto/Roboto-Bold.ttf);
 
@@ -12,244 +16,246 @@
     src: url(../fonts/Roboto/Roboto-Light.ttf);
 }
 
+/* ==========Allgemeine Settings ========== */
+
+/* Font: Roboto
+Farben: #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000
+
+ */
+
 * {
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: Roboto-medium;
+    font-family: "Roboto-Light";  
 }
-body {
-    width: 100vw;
+
+h1, h2, h3, h4 {
+font-family: "Roboto-Bold";
 }
-/* ==========HEADER============== */
 
-/* === Bereich oben links === */
+h2 {
+    font-size: 2.6rem;
+}
 
+/* 
+ */
+/* ===========HEADER=========== */
+
+.maninwolke {
+    position: absolute;
+    top:15vh;
+    right:5vw;
+    width: 40vw;
+}
 
 .ikon_elefant {
-width: 2.5rem;
-position: fixed;
-top: 3vh;
+    width: 40px;
+    margin-right: 1.5rem;
+    position: fixed;
 }
 
-.header_logo_oben_links {
+.logo_elefant {
     display:flex;
-    padding-top: 3vh;
-    margin-left: 5vw; 
-    }
-
-.text_neben_elefant {
-    margin-left: 5vw;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 30vh;
 }
 
-    header h4 {
-        font-size: 1.5rem;
-    font-family: "Roboto-Bold";
-    }
-
-.header_logo_oben_links span {
-font-size: 0.8rem;
-font-family: "Roboto-Light";
-    }
-
-    /* === Bereich obern rechts - Wolke */
-.header_blauewolke {
-    position:relative;
+.text_elefant {
+    padding-left: 3rem;
 }
 
-.img_blauewolke {
-    width:40%;
-    position: absolute;
-    right: 0;
-    top:0;
-
-}
-.maninwolke {
-    width: 35%;
-    position:absolute;
-    top:5vh;
-    right: 2vw;
-}
-
-/* ===== Bereich Haupttext im Header */
-
-.header_main_text {
-    font-size: 1.5rem;
-    display:flex;
-    flex-direction: column;
-    max-width: 30vw;
-    position: absolute;
-    top: 40vh;
-    left: 20vw;
-}
-.header_main_text p:nth-of-type(1){
-    font-size: 0.9rem;
+header {
+    background: url("../Designer_Bilder/blauewolke.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100%;
 } 
 
-.ikon_rocket {
-    width: 2vw;
-}
-.header_last_line {
-color: red;
-font-size: 1.5rem;
-text-transform: uppercase;
-margin-top: 5rem;
+.headline_bereich {
+    display:flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 8vw;
 }
 
-.header_foto_layouts {
-    width:100%;
-    margin-top:100vh;
+.headline_bereich h1 {
+    font-size: 3.7rem;
+    margin-bottom: 2vh;
+}
+
+.headline_bereich p {
+    font-size:1.1rem;
+}
+
+.headline_bereich p:nth-of-type(2){
+    color:red;
+    text-transform: uppercase;
+    margin-top:18vh;
+    font-size: 0.8rem;
+    font-family:"Roboto-Bold";
+    
+}
+
+  /* ========= MAIN SECTION =========== */
+
+.layouts {
+    width: 100%;
+    margin-top:25vh;
     margin-bottom: 20vh;
 }
 
-/* ======== MAIN ========= */
+/* ======== erster Zwischentext ========= */
 
-.ikon_birne {
-    width: 3vw;
-}
-
-.main_birne_text {
-    display: grid;
-    grid-template-columns: 45% 55%;
-    grid-template-rows: 1fr 1fr;
-    gap: 2rem;
-    padding: 10vh 10vw;
-
-}
-.main_birne_text h2 {
-    font-size:2.5rem;
-    margin-bottom: 4rem;
-    
-}
-.main_birne_text p{
-font-size: 0.9rem;
-font-family:"Roboto-Light";
-line-height: 1.5rem;
-margin-left: 10vw;
-padding-top:2vh;
-}
-.hazwei_birne {
-    grid-column: 1/2;
-}
-.text_birne_rechts {
-grid-column: 2/3;
-grid-row: 1/3;
-}
-.hazwei_unterbirne {
-    grid-column:1/2;
-    grid-row: 2/3;
-}
-main .viertexte {
-    padding-left: 10vw;
-    padding-right: 10vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin-bottom: 10vh;
-  }
-  main .viertexte .textimgrid {
-    margin: auto;
-  }
-  main .viertexte .itemheadline {
+.text_und_birne {
     display: flex;
-    margin-bottom: 2vh;
-  }
-  main .viertexte .ikon_klein {
-    width: 2.5vw;
-    margin-right: 1vw;
-  }
-  main .viertexte .einzeltext {
-    width: 25vw;
-    padding-left: 3.5vw;
-    margin-bottom: 15vh;
-    font-family: "Roboto-Light"} 
-
-    /* ====== Zwischentext ========== */
-    .zwischentext_zwei {
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 25vw;
-    }
-    .zwischentext_zwei h2 {
-        font-size: 2.5rem;
-        margin-bottom: 8vh;
-    }
-    .zwischentext_zwei p {
-        font-size: 1.3ram;
-        font-family: "Roboto-Light";
-        margin-bottom: 15vh;
-    }
-
-/* ======== Hauptcollagen ========== */
-
-    .hauptcollage {
-     display:flex;
-    justify-content:space-around;
-    margin: 5vh 5vw 15vh 5vw;
-    padding: 0 5vw;
-    }
-    .hauptcollage img {
-        width: 40vw;
-        
-    }
-    .hauptcollage div {
-        width: 40vw;
-    }
-    .hauptcollage div img {
-        width: 3vw;
-        margin-bottom: 5vh;
-    }
-    .hauptcollage div p:nth-of-type(1) {
-        font-size: 3.5rem;
-        opacity: 0.5;
-        margin: 6vh 0;
-    }
-    .hauptcollage div p:nth-of-type(2) {
-        font-size: 0.9rem;
-        font-family:"Roboto-Light";
-        line-height: 1.5rem;
-        margin-top: 4vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15vh 12vw 8vh 9vw ;  
 }
 
-/* ======= Footer ========== */
+.text_und_birne h2 {
+    width: 25vw;
+}
 
-footer {
+.text_und_birne p {
+    width: 40vw;
+    font-family: "Roboto-Light";
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.after_several {
+    font-size: 2.8rem;
+    margin: 20vh 9vw;
+    width: 45vw;
+}
+
+/*  ======== VIERE TEXTE========== */
+.viertexte {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15vh;
+}
+
+.viertexte article {
+    width: 50%;
+    padding: 5vh 9vw;
+    line-height: 2rem;
+}
+
+.viertexte img  {
+    width: 2vw;
+    margin-right: 1.5rem;
+}
+
+.viertexte p {
+    font-family: "Roboto-Light";
+    font-size: 0.9rem;
+}
+
+.viertexte_inhalt {
+    display: flex;
+    align-items: flex-start;
+}
+
+/*  ========== ZWISCHENTEXT ZWEI ====== */
+.zwischentext_zwei {
     display:flex;
     flex-direction: column;
-   text-align: center;
+    justify-content: center;
     align-items: center;
-}
-footer h2 {
-    font-size: 2.5rem;
-    margin-bottom: 6vh;
-}
-footer p {
-    font-family: "Roboto-Light";
-    margin-bottom: 6vh;
-}
-.forms {
-    display: flex;
-    flex-direction: column;
-}
-
-footer .email {
-margin-bottom: 3vh;
-padding: 2vh 6vw;
+    text-align: center;
+    margin: 0 25vw;
 
 }
-
-footer .submit {
-padding: 2vh 3vw;
-margin-bottom: 4vh;
-background-color: red;
-}
-.letztersatz {
-    display: flex;
     
+.zwischentext_zwei p {
+    font-size: 1.1rem;
+    padding: 2.5rem 0;
+    font-family: "Roboto-Light";
+    margin-bottom: 15vh;
+    line-height: 2rem;
 }
-.letztersatz img {
-    width: 2vw;
-    height: 3vh;
+
+/* ======HAUPTCOLLAGEN ============ */
+
+
+.hauptcollage {
+    display:flex;
+    justify-content: space-evenly;
+    margin-bottom: 10vw;
+}
+
+.hauptcollage img, .hauptcollage div {
+    width: 35vw;
+}
+
+.hauptcollage div img {
+    width: 3vw;
+    margin-bottom: 5vh;
+}
+
+.hauptcollage div p:nth-of-type(1) {
+    font-size: 3.5rem;
+    opacity: 0.5;
+    margin: 6vh 0;
+    font-family: "Roboto-Bold";
+}
+
+.hauptcollage div p:nth-of-type(2) {
+    font-size: 0.9rem;
+    font-family:"Roboto-Light";
+    line-height: 1.5rem;
+    margin-top: 4vh;
+}
+
+/* ======= FOOTER ============ */
+
+.email_bereich {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    margin-bottom: 20vh;
+}
+
+.email_bereich p {
+    font-family: "Roboto-Light";
+    font-size: 1.1rem;
+}
+
+
+.email {
+    padding: 3vh 12vw;
+    font-size: 1.1rem;
+    border: 1px solid  #999;
+    color: #dddddd;
+}
+
+
+.submit_button {
+    padding: 2.5vh 6vw;
+    background-color: #ff3571;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.letzter_satz {
+    display:flex;
+    margin-left: 10vw;
+}
+
+.letzter_satz p {
+    font-family: "Roboto-Light";
+    margin-top: 2vh;
+}
+
+.letzter_satz img {
+    height: 4vh;
+    margin-left: 1vw;
+    margin-bottom: 3vh;
 }
